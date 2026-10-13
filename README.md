@@ -1,12 +1,12 @@
 # Diamante Delivery
 
-Monorepo Maven de microsserviços para o Projeto Diamante. Requer JDK 21, Maven 3.6.3+ e Docker Compose.
+Monorepo Gradle de microsserviços para o Projeto Diamante. Requer JDK 25 e Docker Compose.
 
 ## Integrantes
 
-Preencha antes da entrega no geminidev:
-
-- Nome completo - RM
+- Camily Vitoria Maciel — RM566520
+- Eduarda Weiss — RM564434
+- Lucas Nunes Soares — RM566503
 
 ## Serviços
 
@@ -19,18 +19,19 @@ Preencha antes da entrega no geminidev:
 
 ## Como iniciar
 
-```bash
+```powershell
 docker compose up -d
-mvn -pl eureka-server spring-boot:run
-mvn -pl payment-service spring-boot:run
-mvn -pl payment-service spring-boot:run -Dspring-boot.run.arguments=--server.port=8082
-mvn -pl review-service spring-boot:run
-mvn -pl order-service spring-boot:run
+.\gradlew.bat :eureka-server:bootRun
+.\gradlew.bat :payment-service:bootRun
+.\gradlew.bat :payment-service:bootRun --args="--server.port=8082"
+.\gradlew.bat :review-service:bootRun
+.\gradlew.bat :order-service:bootRun
 ```
 
-Execute cada comando Maven em um terminal separado, a partir da raiz do repositório. Todos os serviços usam `http://eureka-server:8761/eureka/` para descoberta. Como o enunciado executa as aplicações Maven no host, adicione `127.0.0.1 eureka-server` ao arquivo hosts do sistema antes de iniciá-las.
+Execute cada comando Gradle em um terminal separado, a partir da raiz do repositório. Em Linux ou macOS, use `./gradlew` no lugar de `gradlew.bat`. Todos os serviços usam `http://eureka-server:8761/eureka/` para descoberta. Como o enunciado executa as aplicações Gradle no host, adicione `127.0.0.1 eureka-server` ao arquivo hosts do sistema antes de iniciá-las.
 
-O assistente usa OpenAI quando `OPENAI_API_KEY` está definida. Para execução local compatível com OpenAI, configure `SPRING_AI_OPENAI_BASE_URL` (por exemplo, a URL do LM Studio ou Ollama) e `SPRING_AI_OPENAI_API_KEY` se o servidor exigir chave. Nenhuma chave é armazenada neste repositório.
+
+O assistente usa OpenAI quando `OPENAI_API_KEY` está definida. Para execução local compatível com OpenAI, configure `SPRING_AI_OPENAI_BASE_URL` (por exemplo, a URL do LM Studio ou Ollama) e `SPRING_AI_OPENAI_API_KEY` se o servidor exigir chave. Nenhuma chave é armazenada neste repositório. (Coloquei a chave nas variaveis de ambiente)
 
 ## Endpoints
 

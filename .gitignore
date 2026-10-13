@@ -1,1 +1,11 @@
-git branch -M main
+**/target/
+**/build/
+.gradle/
+.gradle-user-home/
+.idea/
+.vscode/
+*.iml
+.env
+.env.*
+!.env.example
+*.log

@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="eureka-server (1)" />
-        <module name="order-service" />
-        <module name="payment-service" />
-        <module name="review-service" />
-      </profile>
-    </annotationProcessing>
+    <bytecodeTargetLevel target="25">
+      <module name="eureka-server" target="1.5" />
+      <module name="eureka-server (1)" target="21" />
+      <module name="order-service" target="21" />
+      <module name="payment-service" target="21" />
+      <module name="review-service" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="delivery-system.eureka-server" options="-parameters" />
+      <module name="delivery-system.eureka-server.main" options="-parameters" />
+      <module name="delivery-system.eureka-server.test" options="-parameters" />
+      <module name="delivery-system.order-service" options="-parameters" />
+      <module name="delivery-system.order-service.main" options="-parameters" />
+      <module name="delivery-system.order-service.test" options="-parameters" />
+      <module name="delivery-system.payment-service" options="-parameters" />
+      <module name="delivery-system.payment-service.main" options="-parameters" />
+      <module name="delivery-system.payment-service.test" options="-parameters" />
+      <module name="delivery-system.review-service" options="-parameters" />
+      <module name="delivery-system.review-service.main" options="-parameters" />
+      <module name="delivery-system.review-service.test" options="-parameters" />
       <module name="eureka-server (1)" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="payment-service" options="-parameters" />
