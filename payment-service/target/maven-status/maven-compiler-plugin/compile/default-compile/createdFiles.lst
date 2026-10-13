@@ -1,0 +1,3 @@
+br\com\diamante\payment\controller\PaymentController.class
+br\com\diamante\payment\PaymentServiceApplication.class
+br\com\diamante\payment\dto\PaymentRequest.class

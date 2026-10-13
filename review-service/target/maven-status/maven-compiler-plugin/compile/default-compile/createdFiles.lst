@@ -1,0 +1,9 @@
+br\com\diamante\review\service\ReviewService$Aggregate.class
+br\com\diamante\review\ReviewServiceApplication.class
+br\com\diamante\review\repository\ReviewSummaryRepository.class
+br\com\diamante\review\service\ReviewService.class
+br\com\diamante\review\controller\ReviewController.class
+br\com\diamante\review\config\ReviewMessagingConfiguration.class
+br\com\diamante\review\dto\RankingEntry.class
+br\com\diamante\review\dto\ReviewMessage.class
+br\com\diamante\review\model\ReviewSummary.class
