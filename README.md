@@ -4,8 +4,6 @@ Monorepo Maven de microsserviços para o Projeto Diamante. Requer JDK 21, Maven 
 
 ## Integrantes
 
-Preencha antes da entrega no geminidev:
-
 - Camily Vitoria Maciel — RM566520
 - Eduarda Weiss — RM564434
 - Lucas Nunes Soares — RM566503
@@ -32,7 +30,7 @@ mvn -pl order-service spring-boot:run
 
 Execute cada comando Maven em um terminal separado, a partir da raiz do repositório. Todos os serviços usam `http://eureka-server:8761/eureka/` para descoberta. Como o enunciado executa as aplicações Maven no host, adicione `127.0.0.1 eureka-server` ao arquivo hosts do sistema antes de iniciá-las.
 
-O assistente usa OpenAI quando `OPENAI_API_KEY` está definida. Para execução local compatível com OpenAI, configure `SPRING_AI_OPENAI_BASE_URL` (por exemplo, a URL do LM Studio ou Ollama) e `SPRING_AI_OPENAI_API_KEY` se o servidor exigir chave. Nenhuma chave é armazenada neste repositório.
+O assistente usa OpenAI quando `OPENAI_API_KEY` está definida. Para execução local compatível com OpenAI, configure `SPRING_AI_OPENAI_BASE_URL` (por exemplo, a URL do LM Studio ou Ollama) e `SPRING_AI_OPENAI_API_KEY` se o servidor exigir chave. Nenhuma chave é armazenada neste repositório. (Coloquei a chave nas variaveis de ambiente)
 
 ## Endpoints
 
