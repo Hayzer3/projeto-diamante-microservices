@@ -6,7 +6,9 @@ Monorepo Maven de microsserviços para o Projeto Diamante. Requer JDK 21, Maven 
 
 Preencha antes da entrega no geminidev:
 
-- Nome completo - RM
+- Camily Vitoria Maciel — RM566520
+- Eduarda Weiss — RM564434
+- Lucas Nunes Soares — RM566503
 
 ## Serviços
 
